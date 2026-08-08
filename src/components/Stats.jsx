@@ -1,6 +1,6 @@
 const STATS = [
-  { value: "280+", label: "Problems solved", detail: "Combined across LeetCode & GeeksforGeeks" },
-  { value: "160+", label: "Institute rank", detail: "Across coding platforms at TSEC" },
+  { value: "310+", label: "Problems solved", detail: "Combined across LeetCode & GeeksforGeeks" },
+  { value: "150+", label: "Institute rank", detail: "Across coding platforms at TSEC" },
   { value: "Top 5", label: "Syntecxathon 2024", detail: "National College Hackathon" },
 ];
 
@@ -22,8 +22,10 @@ export default function Stats() {
           ))}
         </div>
         <div className="stats-links">
-          <a href="#" className="stats-link">LeetCode profile ↗</a>
-          <a href="#" className="stats-link">GeeksforGeeks profile ↗</a>
+          <a href="https://leetcode.com/u/jainpriyani272/" className="stats-link">LeetCode profile ↗</a>
+          <a href="https://www.geeksforgeeks.org/user/jainpriytro3/" className="stats-link">GeeksforGeeks profile ↗</a>
+          <a href="https://codolio.com/profile/priyanijain" className="stats-link">Codolio profile ↗</a>
+
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ const SOCIALS = [
   { label: "GitHub", href: "https://github.com/priyaniii" },
   { label: "LeetCode", href: "https://leetcode.com/u/jainpriyani272/" },
   { label: "GeeksforGeeks", href: "https://www.geeksforgeeks.org/user/jainpriytro3/" },
+  { label: "Codolio", href: "https://codolio.com/profile/priyanijain" },
 ];
 
 export default function Footer() {
