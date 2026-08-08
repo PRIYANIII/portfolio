@@ -1,0 +1,139 @@
+:root {
+  --ink: #090d18;
+  --surface: #121a2c;
+  --surface-2: #172236;
+  --text: #e9edf4;
+  --muted: #8a93a8;
+  --muted-2: #5c6580;
+  --signal: #3ddc97;
+  --signal-dim: rgba(61, 220, 151, 0.14);
+  --amber: #f2a65a;
+  --amber-dim: rgba(242, 166, 90, 0.14);
+  --line: rgba(232, 236, 241, 0.09);
+  --line-strong: rgba(232, 236, 241, 0.16);
+
+  --font-display: "Space Grotesk", "IBM Plex Sans", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 85% -10%, rgba(61, 220, 151, 0.07), transparent 60%),
+    radial-gradient(50rem 30rem at -10% 20%, rgba(242, 166, 90, 0.05), transparent 55%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--signal);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--signal);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 0 3px var(--signal-dim);
+}
+
+section {
+  padding: 96px 0;
+  position: relative;
+}
+
+.section-head {
+  margin-bottom: 44px;
+  max-width: 620px;
+}
+
+.section-head h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section-head .index {
+  font-family: var(--font-mono);
+  color: var(--muted-2);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 64px 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
