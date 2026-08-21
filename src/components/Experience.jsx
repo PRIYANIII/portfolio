@@ -2,7 +2,7 @@ import Signal from "./Signal.jsx";
 
 const ROLES = [
   {
-    period: "Aug 2025 — Present",
+    period: "Aug 2025 — Mar 2026",
     title: "Technical Head",
     org: "Scom, Electroverse.comm-TSEC",
     points: [

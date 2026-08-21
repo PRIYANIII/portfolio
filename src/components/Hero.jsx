@@ -9,7 +9,7 @@ export default function Hero() {
           Priyani Gulgulia
         </h1>
         <p className="hero-role">
-          Electronics &amp; Telecommunication Engineer, building on the web.
+          building on the web.
         </p>
         <p className="hero-desc">
           
